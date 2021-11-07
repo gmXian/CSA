@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first_box{
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+            margin: 0px;
+            background-color: rgb(222, 222, 222);
+        }
+        .second_box{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left:2px;
+            border-bottom: solid 2px gray;    
+            border-right:solid 2px gray ;
+            
+        }
+        .img_box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 800px;
+        }
+
+        .img_box div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            border-width: 1px;
+            border-color: darkgray;
+            border-style: solid;
+            text-align: center;
+
+        }
+
+        .img_box img {
+
+            width: 100px;
+            background-color: burlywood;
+            margin: 10px;
+        }
+
+        table {
+            table-layout: auto;
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        td {
+            white-space: nowrap;
+            border: 1px solid gray;
+        }
+
+        .bold_font {
+            font-weight: bolder;
+        }
+
+        .gray_font {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_box">
+
+    
+    <div class="second_box">
+        <h1>图片</h1>
+        <div class="img_box">
+            <div>
+                第一张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第二张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第三张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第四张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第五张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第六张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第七张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第八张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第九张
+                <img src="./img/QQ.png">
+            </div>
+            <div>
+                第十张
+                <img src="./img/QQ.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="second_box">
+        <h1>最后一篇文章一级标题</h1>
+        <h2 class="gray_font">文章二级标题</h2>
+        <h3 class="gray_font">文章作者 文章发表时间</h3>
+        <ol>
+            <li class="bold_font">排名1</li>
+            <li class="bold_font">排名2</li>
+            <li class="bold_font">排名3</li>
+        </ol>
+        <table>
+            <tr>
+                <td bgcolor="black" style="color: white;">表头</td>
+                <td bgcolor="black" style="color: white;">表头</td>
+                <td bgcolor="black" style="color: white;">表头</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>200</td>
+                <td>
+                    <a href="www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>200</td>
+                <td>
+                    <a href="www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>200</td>
+                <td>
+                    <a href="www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>400</td>
+                <td>
+                    <a href="www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="CCCCCC">总计</td>
+                <td bgcolor="CCCCCC">1000</td>
+                <td bgcolor="CCCCCC"></td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>

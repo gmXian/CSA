@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知乎登录</title>
+    <style>
+        .begin {
+            /* 免密码登录 密码登录 二维码*/
+            width: 350px;
+            display: flex;
+            text-align: left;
+            font-weight: 600;
+            position: relative;
+            line-height: 60px;
+
+            margin-right: 24px;
+            padding: 0 24px;
+        }
+
+        .begin1 {
+            /* 免密码登录和密码登录  */
+            height: 60px;
+            margin-right: 24px;
+        }
+
+        .line {
+            /* 浅色分隔线*/
+            box-sizing: border-box;
+            margin: 0;
+            min-width: 0;
+            border-top: 1px solid;
+            border-color: #ebebeb;
+            margin-left: 24px;
+            margin-right: 24px;
+            width: 350px;
+        }
+
+        .line2 {
+            /*蓝线*/
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 80px;
+            height: 3px;
+            background-color: blue;
+        }
+
+        div {
+            width: 350px;
+        }
+
+        img {
+            /* 图片处理 */
+            width: 20px;
+            height: 20px;
+        }
+
+        .img2 {
+            /*二维码*/
+            width: 52px;
+            height: 52px;
+            position: absolute;
+
+        }
+
+        .css-zvnmar {
+            box-sizing: border-box;
+            margin: 0;
+            min-width: 0;
+            padding: 0;
+            box-shadow: 3px 3px 3px rgb(18 18 18 /10%);
+            border-radius: 2px;
+            background-color: white;
+            width: 400px;
+            
+
+        }
+        .Phone_Email{
+            margin-top: 11px;
+            margin-bottom: 1px;
+            padding: 0 24px;
+            
+
+        }
+        .Password {
+            display: flex;
+            position: relative;
+            margin-top: 11px;
+            justify-content: space-between;
+            padding: 0 24px;
+            
+        }
+
+        .Other_Login_way {
+            /* 海外手机号登录和忘记密码 */
+            display: flex;
+            padding: 0 24px;
+            margin-top: 12px;
+            justify-content: space-between;
+            width: 350px;
+        }
+
+        .Other_Login_way_Button {
+            /* "海外手机号登录和忘记密码" button设置 */
+            color: rgb(136, 138, 136);
+            font-size: 15px;
+            background-color: white;
+            border: none;
+        }
+
+        .Login_Register {
+            /* “注册/登录”键设置 */
+            color: #fff;
+            background-color: #06f;
+
+            display: inline-block;
+            padding: 0 16px;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 3px;
+
+            width: 100%;
+            margin-top: 30px;
+            height: 36px;
+        }
+
+        .tip {
+            /* tip部分 */
+            color: rgb(136, 138, 136);
+            font-size: 13px;
+            padding: 0 24px;
+            height: 50px;
+            vertical-align:middle;
+            margin-top: 20px;
+        }
+
+        .Login-socialLogin {
+            /* 社交账号登录部分*/
+            display: flex;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 24px;
+            justify-content: space-between;
+            width: 350px;
+            color: rgb(141, 174, 212);
+        }
+
+        .Login-socialButton {
+            /* 社交账号登录按钮*/
+            align-items: center;
+            color: rgb(141, 174, 212);
+            background-color: white;
+            border: none;
+        }
+        .bottom {
+            /* 开通机构号和下载知乎app */
+            box-sizing: border-box;
+            display: flex;
+            margin: 0;
+            padding: 0 24px;
+            height: 60px;
+            width: 400px;
+            align-items: center;
+            color: blue;
+            justify-content: space-around;
+            background-color: #ebebeb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="css-zvnmar">
+        <div class="begin">
+            <div class="begin1">免密码登录</div>
+            <div class="begin1">
+                密码登录
+                <div class="line2"></div>
+            </div>
+            <div>
+                <img src="./img/erweima.png" alt="" class="img2" >
+            </div>
+
+        </div>
+
+        <div class="Phone_Email">
+            <input type="text" placeholder="手机号或邮箱" style="width: 310px;height: 30px;border: none;outline: none;font-size: 15px;">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="Password">
+            <input type="password" placeholder="密码" style="width: 310px;height: 30px;border: none;outline: none;font-size: 15px;">
+            <img src="./img/eye.png" style="width: 30px;height: 30px;">
+        </div>
+        <div class="line"></div>
+        <div class="Other_Login_way">
+            <button class="Other_Login_way_Button">
+                海外手机号登录
+            </button>
+            <button class="Other_Login_way_Button">
+                忘记密码
+            </button>
+        </div>
+        <button class="Login_Register">注册/登录</button>
+
+        <div class="tip">未注册手机验证后自动登录，注册即代表同意《知乎协议》《隐私保护指引》</div>
+
+        <div class="line"></div>
+        <div class="Login-socialLogin">
+            <span class="">社交账号登录</span>
+            <span>
+                <button class="Login-socialButton">
+                    <img src="./img/weixin.png">
+                    微信
+                </button>
+                <button class="Login-socialButton">
+                    <img src="./img/QQ.png">
+                    QQ
+                </button>
+                <button class="Login-socialButton">
+                    <img src="./img/weibo.png">
+                    微博
+                </button>
+            </span>
+
+        </div class=>
+        <div class="bottom">
+
+            <div>
+                <img src="./img/jigouhao.png">
+                开通机构号
+            </div>
+            <div>
+                <img src="./img/zhihu.png">
+                下载知乎app
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
