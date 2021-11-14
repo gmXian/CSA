@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*level2-1
+        *使用prompt接收用户输入的数字（需要将输入转换为数字）
+        *如果用户输入的内容不能成功转换为数字，应让用户再一次输入，直到能转换成数字为止
+        *再将用户输入的数字平方后通过alert展示
+        */
+        var message = prompt("请输入一个数字：");
+        message = parseInt(message);
+        while (1) {
+            if (typeof message == "number" && !isNaN(message)) {
+                message *=message;
+                alert("你输入的数字平方后为：" + message);
+                break;
+            }
+            else{
+                message = prompt("你未输入正确的数字，请重新输入：");
+                message = parseInt(message);
+            }     
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
