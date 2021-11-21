@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = {
+            age: 18,
+            name: "这是真的难",
+            education: ["小学", "初中", "高中", "大学", undefined, null],
+            friends: [
+                { name: "Amber", sex: "woman" },
+                { name: "Barbara", sex: "woman" },
+                { name: "Venti", sex: "man" }],
+            work: {
+                time: "2021",
+                project: { name: "test", obtain: ["css", "html", "js"] }
+            },
+            play: function () { console.log("玩滑板"); }
+        }
+        //深拷贝
+        console.log("深拷贝")
+        function deepClone(data) {
+            let result;
+            //如果是object类型不能直接赋值
+            if (typeof data === 'object') {
+                if (Array.isArray(data)) {  //数组深拷贝
+                    result = [];
+                    for (let i in data) {
+                        result.push(data[i]);
+                    }
+                } else { //其他类型递归赋值
+                    result = {};
+                    for (let i in data) {
+                        result[i] = deepClone(data[i]);
+                    }
+                }
+            } else {  //如果是基本数据类型，直接赋值
+                result = data;
+            }
+            return result;
+        }
+        var data2 = deepClone(data);
+        data2.education = ["primary school", "middle school", "high school", "university"];
+        console.log(data.education)
+        console.log(data2.education)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
